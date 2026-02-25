@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM ubuntu:22.04
 
-RUN apk add --no-cache shadowsocks-libev
+RUN apt-get update && apt-get install -y shadowsocks-libev
 
 EXPOSE 8080
 
